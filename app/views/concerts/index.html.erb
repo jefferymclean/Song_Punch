@@ -7,7 +7,9 @@
 		</p>
 		<ul>
 			<% @concerts.each do |c| %>
-				<li><%= c.title %></li>
+				<li>
+					<%= link_to c.title, concert_path(c) %>
+				</li>
 			<% end %> 
 		</ul>
 	<% else %> 
@@ -21,3 +23,4 @@
 		</p>
 	<% end %>
 </ul>
+
