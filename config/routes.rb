@@ -1,7 +1,9 @@
 SongPunch::Application.routes.draw do
 
-resources :concerts, :users
+resources :concerts
+resources :users
 root to: "home#index"
+
 
 
 #resources :users, :stars, :cities

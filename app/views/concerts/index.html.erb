@@ -1,8 +1,10 @@
 <h1>List of Concerts in <%= params[:city] %> </h1>
 
-<ul>
-	<li>Aerosmith</li>
-	<li>NIN</li>
-	<li>Metallica</li>
-
+<ul class="concert-list">
+	<p class="info">
+		Check it out brah, these are the concerts in your hood:
+	</p>
+	<% @concerts.each do |c| %>
+		<li><%= c.title %></li>
+	<% end %> 
 </ul>

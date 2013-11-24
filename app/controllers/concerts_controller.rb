@@ -1,26 +1,18 @@
 class ConcertsController < ApplicationController
 
 	def index
-		@concerts = Concert.all
-	end
-
-	def show
-		@concerts = Concert.all
-	end
-
-	def create
-	end
-
-	def edit	
-	end
-
-	def delete
+		# @concerts = Concert.all
+		city = params[:city]
+		@concerts = Concert.where(city: city)
 	end
 
 	def new
+		@concerts = Concert.new
 	end
 
-	def update
-	end
+
+	# def show
+	# 	@concerts = Concert.all
+	# end
 
 end

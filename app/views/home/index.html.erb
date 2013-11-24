@@ -1,14 +1,9 @@
 <h1>Song Punch</h1>
 
-<%= form_tag '/concerts', method: :get do %> 
-	<%= text_field_tag 'city' %>
-<% end %>
- 
+<div class="concert-search">
+	<%= form_tag '/concerts', method: :get do %> 
+		<%= text_field_tag 'city' %>
+		<%= submit_tag "Submit", class: "btn btn-default" %>
+	<% end %>
+</div>
 
- <!-- 
-</form>
-<div class="input-group">
-  <input type="text" class="form-control">
-  <div class="input-group-btn">
-  </div>
-</div> -->
