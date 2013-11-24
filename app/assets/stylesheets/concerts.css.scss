@@ -2,18 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-ul.concert-list {
+div.concert-list {
 	background-color: white;
 	padding: 20px 20px 20px 40px;
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px gray;
 	width: 400px;
 	margin: auto;
-}
 
-p.info {
-	background-color: lightblue;
-	border-radius: 5px;
-	border: 1px solid blue;
-	padding: 10px;
+	p {
+		border-radius: 5px;
+		padding: 10px;
+		text-align: center;
+		font-weight: bold;
+
+		&.info {
+			background-color: lightblue;
+			border: 1px solid blue;
+		}
+
+		&.error {
+			background-color: pink;
+			border: 1px solid red;
+		}
+
+	}
+
 }
