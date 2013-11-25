@@ -1,9 +1,17 @@
 SongPunch::Application.routes.draw do
 
+  get "sessions/sessions"
+  get "sessions/new"
+  get "sessions/create"
+resources :pages
 resources :concerts
-resources :users
+resources :users, only: [:new, :create]
+resources :sessions, only: [:new, :create]
+
+
 root to: "home#index"
 
+get "pages/about"
 
 
 #resources :users, :stars, :cities

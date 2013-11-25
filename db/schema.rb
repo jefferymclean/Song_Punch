@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131122025432) do
+ActiveRecord::Schema.define(version: 20131125023524) do
 
   create_table "concerts", force: true do |t|
     t.string   "title"
@@ -37,6 +37,8 @@ ActiveRecord::Schema.define(version: 20131122025432) do
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "password"
+    t.string   "password_confirmation"
   end
 
 end
