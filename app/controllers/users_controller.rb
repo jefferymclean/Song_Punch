@@ -8,7 +8,7 @@ class UsersController < ApplicationController
  	  @user = User.create(user_params)
 	
 		if @user.save 
-		  redirect_to concerts_path
+		  redirect_to concerts_path, notice: "#{@user.first_name} was submitted successfully!"
 		else
 		  render :new
 		end

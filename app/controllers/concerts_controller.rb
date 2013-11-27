@@ -9,10 +9,4 @@ class ConcertsController < ApplicationController
 	def new
 		@concerts = Concert.new
 	end
-
-
-	# def show
-	# 	@concerts = Concert.all
-	# end
-
 end
