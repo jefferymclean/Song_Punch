@@ -20,5 +20,5 @@ Concert.create!([
 	{title: "Pink Floyd", date: "February 12 2013", city: "vancouver"},
 	{title: "Moby Dick & the Cock-n-Balls", date: "February 15 2013", city: "vancouver"},
 	{title: "Hulk Machine", date: "December 31 2013", city: "toronto"},
-	{title: "Albert Cuntry & The Rails Console", date: "January 31 2014", city: "halifax"}
+	{title: "Albert Country & The Rails Console", date: "January 31 2014", city: "halifax"}
 ])

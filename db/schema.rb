@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 20131125023524) do
     t.datetime "updated_at"
   end
 
-  add_index "stars", ["concert_id"], name: "index_stars_on_concert_id"
-  add_index "stars", ["user_id"], name: "index_stars_on_user_id"
+  add_index "stars", ["concert_id"], name: "index_stars_on_concert_id", using: :btree
+  add_index "stars", ["user_id"], name: "index_stars_on_user_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "first_name"

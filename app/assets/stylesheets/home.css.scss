@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-	background-image: url("bn.jpg"); 
+	background-image: asset-url("bn.jpg", image); 
 	background-repeat: no-repeat; 
 	background-position: center;
 	width: 100%;
