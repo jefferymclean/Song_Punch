@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
 
+	has_secure_password
+
 	validates :first_name, 
 		presence: true
 
@@ -12,7 +14,12 @@ class User < ActiveRecord::Base
 	validates :password, 
 		presence: true
 
+	validates :password, 
+	length: { in: 6..20 }, on: :create
+
 	validates :password_confirmation, 
 		presence: true
 
 end
+
+

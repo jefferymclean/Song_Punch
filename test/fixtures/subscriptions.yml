@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 
+  start_date: MyString
+  end_date: MyString
+  last_payment_date: MyString
+  num_failures: MyString
+
+two:
+  user_id: 
+  start_date: MyString
+  end_date: MyString
+  last_payment_date: MyString
+  num_failures: MyString

@@ -37,13 +37,30 @@ group :development do
   gem 'quiet_assets'
 end
 
+#this block was put in for Rspec tutorial reasons.
+group :development, :test do 
+	gem "rspec-rails"
+	gem "factory_girl_rails", "~> 4.2.1"
+end
+
+#this block was put in for Rspec tutorial reasons.
+group :test do
+	gem "faker", "~> 1.1.2"
+	gem "capybara", "~> 2.1.0"
+	gem "database_cleaner", "~> 1.0.1"
+	gem "launchy", "~> 2.3.0"
+	gem "selenium-webdriver", "~> 2.35.1"
+end 
+
 gem 'rails_12factor', group: :production
 gem 'pg'
 
 ruby "2.0.0"
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
+
+
 
 # Use unicorn as the app server
 # gem 'unicorn'

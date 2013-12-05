@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  subscription_id: 
+  subscription_id: MyString
+  amount: MyString
+  date_and_time_of_payment: MyString
+
+two:
+  subscription_id: 
+  subscription_id: MyString
+  amount: MyString
+  date_and_time_of_payment: MyString
